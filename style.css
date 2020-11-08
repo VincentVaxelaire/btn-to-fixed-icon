@@ -9,7 +9,7 @@ a{
 /*Shitty btn who become a fixed icon*/
 .btn-to-stiky-icon{
   position: absolute;
-  bottom: calc(100vh - 70px);
+  bottom: calc(55vh - 70px);
   /*need to reduce 50% for mobile responsive*/
   left: calc(50% - 110px);
   width: 220px;
@@ -20,6 +20,18 @@ a{
   overflow: hidden;
   transform: translateZ(0);
   background: #333333;
+}
+
+.btn-to-stiky-icon .title{
+  visibility: visible;
+  position: relative;
+  font-size: 32px;
+  color: #fff;
+  transition: all .5s ease-in-out;
+}
+
+.btn-to-stiky-icon .icon{
+  display: none;
 }
 
 .btn-to-stiky-icon.stiky-icon{
@@ -35,4 +47,18 @@ a{
   background-color: #ef4b6c;
   border-radius: 50%;
   transform: translateZ(0);
+}
+
+.btn-to-stiky-icon.stiky-icon .title{
+  display: none;
+}
+
+.btn-to-stiky-icon.stiky-icon .icon{
+  display: initial;
+  position: relative;
+  top: 6px;
+  left: 14px;
+  font-size: 32px;
+  color: #fff;
+  transition: all .5s ease-in-out;
 }
